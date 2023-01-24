@@ -22,72 +22,203 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Document</title>
+    <title>Jesse Krensel</title>
   </head>
   <body>
-    <section id="hero">
-      <div class="container">
-        <div id="hero-flex-container">
-          <div class="row">
-            <h1 class="bold700">
-              Hello, I'm
-              <span class="name">Jesse Krensel</span>.
-              <br />
-              I'm a web developer.
-            </h1>
+    <!-- home section -->
+    <section id="home">
+      <div class="home-container">
+        <h1 class="home-header bold700">
+          Hello, I'm
+          <span class="name">Jesse Krensel</span>. <br />
+          <span class="role"></span>
+          I'm a front-end web developer.
+        </h1>
+        <button
+          onclick="scrollToProjects()"
+          onmouseenter="randomColor()"
+          onmouseleave="whiteBg()"
+          id="home-button"
+          type="button"
+          class="btn change-icon"
+        >
+          <p>Projects</p>
+          <i class="right fa-solid fa-arrow-right"></i>
+          <!-- <i class="down fa-solid fa-arrow-down"></i> -->
+        </button>
+      </div>
+    </section>
+
+    <!-- navigation -->
+    <div id="navbar-section">
+      <div class="navbar">
+        <a class="btn" href="#home">Home</a>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#contact">Contact</a>
+        <button
+          class="menu-button"
+          aria-controls="primary-navigation"
+          aria-expanded="false">
+          <svg
+            class="hamburger"
+            viewBox="0 -5 100 100"
+            width="30"
+            fill="none"
+            stroke="#000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              class="line"
+              d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+              stroke-width="7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="bottom-border"></div>
+
+    </div>
+    <div id="overlay-div" class="overlay">
+      <a class="overlay-btn" href="#home" onclick="closeSideNav()">Home</a>
+      <a class="overlay-btn" href="#projects" onclick="closeSideNav()">Projects</a>
+      <a class="overlay-btn" href="#about" onclick="closeSideNav()">About</a>
+      <a class="overlay-btn" href="#contact" onclick="closeSideNav()">Contact</a>
+    </div>
+
+    <button onclick="scrollHome()" id="scrollHomeBtn" class="btn">
+      <p>↑</p>
+    </button>
+
+    <!-- projects section -->
+    <section id="projects">
+      <h1 class="project-heading">projects</h1>
+      <div class="projects-container">
+        <div class="project-card">
+          <img
+            id="tindoge"
+            src="./images/tindoge.png"
+            class="project-img"
+            alt=""
+          />
+          <div class="project-content">
+            <h1 class="project-title">Project 01</h1>
+            <p class="project-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum in erat nec dolor rhoncus faucibus eu vel ante. Mauris
+              lectus nulla, mollis eu quam at, fringilla ultrices magna. Ut in
+              porttitor sem.
+            </p>
+            <div class="project-btn-grp">
+              <button class="project-btn github">github repo</button>
+              <button class="project-btn live">see live</button>
+            </div>
           </div>
-          <div class="row">
-            <button onclick="scrollToWork()" type="button" class="button">
-              <p>work <i class="fa-solid fa-arrow-down"></i></p>
-            </button>
+        </div>
+        <div class="project-card">
+          <img src="./images/dot.png" class="project-img" alt="" />
+          <div class="project-content">
+            <h1 class="project-title">Project 01</h1>
+            <p class="project-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum in erat nec dolor rhoncus faucibus eu vel ante. Mauris
+              lectus nulla, mollis eu quam at, fringilla ultrices magna. Ut in
+              porttitor sem.
+            </p>
+            <div class="project-btn-grp">
+              <button class="project-btn github">github repo</button>
+              <button class="project-btn live">see live</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/dot.png" class="project-img" alt="" />
+          <div class="project-content">
+            <h1 class="project-title">Project 01</h1>
+            <p class="project-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum in erat nec dolor rhoncus faucibus eu vel ante. Mauris
+              lectus nulla, mollis eu quam at, fringilla ultrices magna. Ut in
+              porttitor sem.
+            </p>
+            <div class="project-btn-grp">
+              <button class="project-btn github">github repo</button>
+              <button class="project-btn live">see live</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/dot.png" class="project-img" alt="" />
+          <div class="project-content">
+            <h1 class="project-title">Project 01</h1>
+            <p class="project-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum in erat nec dolor rhoncus faucibus eu vel ante. Mauris
+              lectus nulla, mollis eu quam at, fringilla ultrices magna. Ut in
+              porttitor sem.
+            </p>
+            <div class="project-btn-grp">
+              <button class="project-btn github">github repo</button>
+              <button class="project-btn live">see live</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/dot.png" class="project-img" alt="" />
+          <div class="project-content">
+            <h1 class="project-title">Project 01</h1>
+            <p class="project-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum in erat nec dolor rhoncus faucibus eu vel ante. Mauris
+              lectus nulla, mollis eu quam at, fringilla ultrices magna. Ut in
+              porttitor sem.
+            </p>
+            <div class="project-btn-grp">
+              <button class="project-btn github">github repo</button>
+              <button class="project-btn live">see live</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/dot.png" class="project-img" alt="" />
+          <div class="project-content">
+            <h1 class="project-title">Project 01</h1>
+            <p class="project-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum in erat nec dolor rhoncus faucibus eu vel ante. Mauris
+              lectus nulla, mollis eu quam at, fringilla ultrices magna. Ut in
+              porttitor sem.
+            </p>
+            <div class="project-btn-grp">
+              <button class="project-btn github">github repo</button>
+              <button class="project-btn live">see live</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="navbar">
-      <div class="container">
-        <div class="row">
-          <div class="navbar">
-            <a href="#hero">home</a>
-            <a href="#work">work</a>
-            <a href="#about">about</a>
-            <a href="#contact">contact</a>
-          </div>
-        </div>
-      </div>
+    <!-- about section -->
+    <section id="about">
+      <h1>about</h1>
     </section>
 
-    <section id="work" class="outline">
-      <div class="container height-90-percent">
-        <div class="grid-container">
-          <!-- <img src="./images/dot.png" alt="dot" />
-          <img src="./images/dot.png" alt="dot" />
-          <img src="./images/dot.png" alt="dot" />
-          <img src="./images/dot.png" alt="dot" />
-          <img src="./images/dot.png" alt="dot" />
-          <img src="./images/dot.png" alt="dot" /> -->
-          <div class="image-div">test</div>
-          <div class="image-div">test</div>
-          <div class="image-div">test</div>
-          <div class="image-div">test</div>
-          <div class="image-div">test</div>
-          <div class="image-div">test</div>
-          <div class="image-div">test</div>
-          <div class="image-div">test</div>
-        </div>
-      </div>
+    <!-- contact section -->
+    <section id="contact">
+      <h1>contact</h1>
     </section>
-    <section id="about" class="outline">
-      <div class="container">
-        <div class="row">about</div>
-      </div>
-    </section>
-    <section id="tech" class="flex vh-100 outline"><div>tech</div></section>
-    <section id="contact" class="flex vh-100 outline">
-      <div>contact</div>
-    </section>
-    <footer></footer>
+
+    <!-- footers -->
+    <div id="pre-footer">
+      <h1>pre-footer</h1>
+    </div>
+    <footer>
+      <p>© Jesse Krensel</p>
+      <br />
+      <p id="date">Date</p>
+    </footer>
 
     <script type="text/javascript" src="./scripts/scripts.js"></script>
   </body>
