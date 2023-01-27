@@ -326,7 +326,7 @@ section:nth-child(1) {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   overflow: hidden;
   margin: auto;
   padding: 0rem 5rem;
@@ -376,6 +376,20 @@ section:nth-child(1) {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1rem 0;
+}
+
+.project-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-logos img {
+  max-width: 100%;
+  height: auto;
+  width: 25%;
+  padding: 0.75rem;
 }
 
 .project-btn-grp {
@@ -393,6 +407,7 @@ section:nth-child(1) {
   cursor: pointer;
   border-radius: 8px;
   font-size: clamp(0.5rem, 1.25vw, 1.5rem);
+  text-decoration: none;
 }
 
 .project-btn.github {
@@ -403,9 +418,8 @@ section:nth-child(1) {
 }
 
 .project-btn.github:hover {
-  background: #fff;
+  background: var(--blue);
   color: #000;
-  font-weight: bold;
 }
 
 .project-btn.live-demo {
@@ -416,14 +430,14 @@ section:nth-child(1) {
 }
 
 .project-btn.live-demo:hover {
-  background: #000;
+  background: var(--blue);
   border: 2px solid #000;
   color: #fff;
-  font-weight: bold;
 }
 
 .project-card:hover .project-img {
-  filter: blur(10px);
+  filter: blur(20px);
+  opacity: 0.4;
 }
 
 .project-card:hover .project-content {
