@@ -59,7 +59,8 @@
         <button
           class="menu-button"
           aria-controls="primary-navigation"
-          aria-expanded="false">
+          aria-expanded="false"
+        >
           <svg
             class="hamburger"
             viewBox="0 -5 100 100"
@@ -79,13 +80,16 @@
         </button>
       </div>
       <div class="bottom-border"></div>
-
     </div>
     <div id="overlay-div" class="overlay">
       <a class="overlay-btn" href="#home" onclick="closeSideNav()">Home</a>
-      <a class="overlay-btn" href="#projects" onclick="closeSideNav()">Projects</a>
+      <a class="overlay-btn" href="#projects" onclick="closeSideNav()"
+        >Projects</a
+      >
       <a class="overlay-btn" href="#about" onclick="closeSideNav()">About</a>
-      <a class="overlay-btn" href="#contact" onclick="closeSideNav()">Contact</a>
+      <a class="overlay-btn" href="#contact" onclick="closeSideNav()"
+        >Contact</a
+      >
     </div>
 
     <button onclick="scrollHome()" id="scrollHomeBtn" class="btn">
@@ -94,26 +98,39 @@
 
     <!-- projects section -->
     <section id="projects">
-      <h1 class="project-heading">projects</h1>
+      <h1 class="project-heading">Projects</h1>
       <div class="projects-container">
         <div class="project-card">
           <img
-            id="tindoge"
-            src="./images/tindoge.png"
+            id="portfolio"
+            src="./images/portfolio.png"
             class="project-img"
             alt=""
           />
           <div class="project-content">
-            <h1 class="project-title">Project 01</h1>
+            <h1 class="project-title">jessekrensel.com</h1>
             <p class="project-info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum in erat nec dolor rhoncus faucibus eu vel ante. Mauris
-              lectus nulla, mollis eu quam at, fringilla ultrices magna. Ut in
-              porttitor sem.
+              A portfolio designed and developed from scratch using vanilla HTML,
+              CSS, and JavaScript. No Bootstrap, no jQuery, no React.
             </p>
+            <div class="project-logos">
+              <img src="./images/html.png" />
+              <img src="./images/css.png" />
+              <img src="./images/js.png" />
+            </div>
             <div class="project-btn-grp">
-              <button class="project-btn github">Github Repo</button>
-              <button class="project-btn live-demo">Live Demo</button>
+              <a
+                href="https://github.com/jeklnd/january-portfolio"
+                class="project-btn github"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Github Repo</a
+              >
+              <a
+                href="#home"
+                class="project-btn live-demo"
+                >Live Demo</a
+              >
             </div>
           </div>
         </div>
@@ -125,16 +142,101 @@
             alt=""
           />
           <div class="project-content">
-            <h1 class="project-title">Project 01</h1>
+            <h1 class="project-title">Tindoge</h1>
             <p class="project-info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum in erat nec dolor rhoncus faucibus eu vel ante. Mauris
-              lectus nulla, mollis eu quam at, fringilla ultrices magna. Ut in
-              porttitor sem.
+              A front-end focused landing page project built in HTML and CSS
+              during the London App Brewery online web development bootcamp.
             </p>
+            <div class="project-logos">
+              <img src="./images/html.png" />
+              <img src="./images/css.png" />
+            </div>
             <div class="project-btn-grp">
-              <button class="project-btn github">Github Repo</button>
-              <button class="project-btn live-demo">Live Demo</button>
+              <a
+                href="https://github.com/jeklnd/tindoge"
+                class="project-btn github"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Github Repo</a
+              >
+              <a
+                href="https://jeklnd.github.io/tindoge/"
+                class="project-btn live-demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img id="Simon" src="./images/simon.png" class="project-img" alt="" />
+          <div class="project-content">
+            <h1 class="project-title">Simon</h1>
+            <p class="project-info">
+              A 1978 classic game built using jQuery and hosted on GitHub Pages.
+              Be careful: it's genuinely fun to play.
+            </p>
+            <div class="project-logos">
+              <img src="./images/html.png" />
+              <img src="./images/css.png" />
+              <img src="./images/js.png" />
+              <img src="./images/jquery.png" />
+            </div>
+            <div class="project-btn-grp">
+              <a
+                href="https://github.com/jeklnd/simon"
+                class="project-btn github"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Github Repo</a
+              >
+              <a
+                href="https://jeklnd.github.io/simon/"
+                class="project-btn live-demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            id="ejs-blog"
+            src="./images/ejs-blog.png"
+            class="project-img"
+            alt=""
+          />
+          <div class="project-content">
+            <h1 class="project-title">EJS Blog</h1>
+            <p class="project-info">
+              Built using Express.js and EJS, this simple blog-style project
+              involved defining custom routes, working with middlewares,
+              templating, and managing a MongoDB database hosted in the cloud
+              through Heroku.
+            </p>
+            <div class="project-logos">
+              <img src="./images/nodejs.png" />
+              <img src="./images/mongodb.png" />
+              <img src="./images/heroku-landscape.png" />
+            </div>
+            <div class="project-btn-grp">
+              <a
+                href="https://github.com/jeklnd/ejs-blog"
+                class="project-btn github"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Github Repo</a
+              >
+              <a
+                href="https://safe-atoll-88975.herokuapp.com/"
+                class="project-btn live-demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
             </div>
           </div>
         </div>
@@ -227,12 +329,12 @@
 
     <!-- about section -->
     <section id="about">
-      <h1>about</h1>
+      <h1>About</h1>
     </section>
 
     <!-- contact section -->
     <section id="contact">
-      <h1>contact</h1>
+      <h1>Contact</h1>
     </section>
 
     <!-- footers -->
