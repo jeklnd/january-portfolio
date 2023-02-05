@@ -14,7 +14,7 @@
     />
 
     <!-- LOCAL STYLES -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
     <!-- HOSTED SCRIPTS -->
     <script
@@ -35,7 +35,7 @@
           I'm a front-end web developer.
         </h1>
         <button id="home-button" type="button" class="btn change-icon">
-          <p>Projects</p>
+          <p>View my work</p>
           <i class="icon-sizing right fa-solid fa-arrow-right"></i>
           <!-- <i class="down fa-solid fa-arrow-down"></i> -->
         </button>
@@ -46,9 +46,11 @@
     <div id="navbar-section">
       <div class="navbar">
         <a class="btn nav-link" href="#home">Home</a>
-        <a class="btn nav-link" href="#projects">Projects</a>
         <a class="btn nav-link" href="#about">About</a>
+        <a class="btn nav-link" href="#projects">Projects</a>
         <a class="btn nav-link" href="#contact">Contact</a>
+        <a class="btn nav-link" href="#blog">Blog</a>
+
         <button
           class="menu-button"
           aria-controls="primary-navigation"
@@ -76,14 +78,71 @@
     </div>
     <div id="overlay-div" class="overlay">
       <a class="overlay-btn" href="#home">Home</a>
-      <a class="overlay-btn" href="#projects">Projects</a>
       <a class="overlay-btn" href="#about">About</a>
+      <a class="overlay-btn" href="#projects">Projects</a>
       <a class="overlay-btn" href="#contact">Contact</a>
     </div>
 
-    <button onclick="scrollHome()" id="scrollHomeBtn" class="btn">
+    <button id="scrollHomeBtn" class="btn">
       <p>↑</p>
     </button>
+
+    <section id="about">
+      <h2 class="section-heading">About</h2>
+      <div class="about-container">
+        <div id="bio">
+          <p>
+            I'm a junior front-end developer looking for a new role in an
+            exciting company. I focusing on writing well-structured HTML,
+            responsive CSS, and clean JavaScript code. When developing the
+            front-end, I use mostly vanilla HTML, CSS, and JavaScript although
+            I'm also known to add Sass, jQuery, Bootstrap, and React. Most importantly, I can
+            adapt to whatever tools are required for the job and I constantly learn new technologies. I'm based in Philadelphia, PA,
+            but I'm happy to work remotely and have experience in remote teams.
+            When I'm not coding, you can find me travelling, working out, and
+            going to new places. I'd love for you to check out what I'm working
+            on.
+          </p>
+        </div>
+        <div id="skills">
+          <!-- <div class="skills-header"><h2>Skills</h2></div> -->
+          <div class="skills-cards">
+            <div class="skills-card">
+              <!-- <p class="skills-card-header">HTML</p> -->
+              <img class="skills-card-logo" src="./images/html.png" />
+            </div>
+            <div class="skills-card">
+              <!-- <p class="skills-card-header">CSS</p> -->
+              <img class="skills-card-logo" src="./images/css.png" />
+            </div>
+            <div class="skills-card">
+              <!-- <p class="skills-card-header">JavaScript</p> -->
+              <img class="skills-card-logo" src="./images/js.png" />
+            </div>
+            <div class="skills-card">
+              <!-- <p class="skills-card-header">Sass</p> -->
+              <img class="skills-card-logo" src="./images/sass.png" />
+            </div>
+            <div class="skills-card">
+              <!-- <p class="skills-card-header">jQuery</p> -->
+              <img class="skills-card-logo" src="./images/jquery.png" />
+            </div>
+            <div class="skills-card">
+              <!-- <p class="skills-card-header">jQuery</p> -->
+              <img class="skills-card-logo" src="./images/git.png" />
+            </div>
+            <div class="skills-card">
+              <!-- <p class="skills-card-header">jQuery</p> -->
+              <img class="skills-card-logo" src="./images/vscode.png" />
+            </div>
+            <div class="skills-card">
+              <!-- <p class="skills-card-header">jQuery</p> -->
+              <img class="skills-card-logo" src="./images/bootstrap.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- projects section -->
     <section id="projects">
@@ -267,9 +326,6 @@
     </section>
 
     <!-- about section -->
-    <section id="about">
-      <h2 class="section-heading">About</h2>
-    </section>
 
     <!-- contact section -->
     <section id="contact">
@@ -288,6 +344,15 @@
       <p>I'm responsive and <a href="">I change colors</a> too!</p>
     </footer>
 
-    <script type="text/javascript" src="./scripts/scripts.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="./skills.js"></script>
   </body>
 </html>
