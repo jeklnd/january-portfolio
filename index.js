@@ -34,24 +34,33 @@ document.querySelector(".name").style.color = colors[random];
 document.getElementById("home-button").addEventListener("mouseenter", () => {
   document.getElementById("home-button").style.backgroundColor = colors[random];
 });
+document.getElementById("home-button").addEventListener("mouseleave", () => {
+  document.getElementById("home-button").style.backgroundColor = "#ebebeb";
+});
 document.querySelector(".bottom-border").style.backgroundColor = colors[random];
 
-function setNameColor() {
-  document.getElementById("home-button").addEventListener("mouseleave", () => {
-    document.getElementById("home-button").style.backgroundColor = "#ebebeb";
-  });
+const navLinks = document.querySelectorAll(".nav-link");
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("mouseenter", () => {
+    navLinks[i].style.color = colors[random]
+  })
+  navLinks[i].addEventListener("mouseleave", () => {
+    navLinks[i].style.color = "#000"
+  })
 }
 
-setNameColor();
+///////////////////////////////////////////////
 
-// function setLinkColors() {
-//   document.querySelector(".active").style.color = colors[random];
-// }
+// overlay navigation
 
+///////////////////////////////////////////////
 function openSideNav() {
   document.getElementById("navbar-section").classList.add("overlay-navbar");
   document.getElementById("navbar-section").style.width = "0vw";
+  document.getElementById("overlay-div").style.display = "flex";
+
   document.getElementById("overlay-div").style.width = "100vw";
+
   const overlayButtons = document.querySelectorAll(".overlay-btn");
   overlayButtons.forEach((button) => {
     button.style.color = "#fff";
