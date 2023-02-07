@@ -1,3 +1,4 @@
+// "use strict";
 ///////////////////////////////////////////////
 
 // buttons
@@ -42,11 +43,11 @@ document.querySelector(".bottom-border").style.backgroundColor = colors[random];
 const navLinks = document.querySelectorAll(".nav-link");
 for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener("mouseenter", () => {
-    navLinks[i].style.color = colors[random]
-  })
+    navLinks[i].style.color = colors[random];
+  });
   navLinks[i].addEventListener("mouseleave", () => {
-    navLinks[i].style.color = "#000"
-  })
+    navLinks[i].style.color = "#000";
+  });
 }
 
 ///////////////////////////////////////////////
@@ -77,6 +78,7 @@ function closeSideNav() {
   });
   document.querySelector(".menu-button").setAttribute("aria-expanded", "false");
 }
+
 for (child of document.getElementById("overlay-div").children) {
   child.addEventListener("click", closeSideNav);
 }
