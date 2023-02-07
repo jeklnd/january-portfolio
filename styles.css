@@ -92,13 +92,11 @@ Home Section
 ********************************************************************/
 #home {
   transition: 1s;
-  /* background: linear-gradient(145deg, #001099 0, #3ad9ff 96%); */
-}
-
-#home {
+  /* background: var(--dark); */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* color: #ebebeb; */
 }
 
 .home-container {
@@ -342,7 +340,7 @@ About Section
   max-width: 90%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(350px,auto));
+  grid-template-columns: repeat(2, minmax(350px, auto));
   gap: 10px 20px;
 }
 
@@ -350,7 +348,6 @@ About Section
   .about-content {
     grid-template-columns: 1fr;
   }
-  
 }
 
 #headshot {
@@ -419,15 +416,18 @@ Projects Section
   background-color: #ebebeb;
   border-radius: 50px;
   border: 10px solid #000;
-  box-shadow: 5px 5px 15px rgba(0,0,0,1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
 }
 
 .project-img {
   position: absolute;
   object-fit: contain;
+  top: 0;
+  /* left/: 100px; */
   /* object-position: 40% top; */
   height: 100%;
   width: 100%;
+  border-radius: 40px;
   transition: 0.5s;
 }
 
