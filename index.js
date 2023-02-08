@@ -11,7 +11,7 @@ document
     document.getElementById("about").scrollIntoView()
   );
 
-document.getElementById("scrollHomeBtn").addEventListener("click", () => {
+document.getElementById("scroll-home").addEventListener("click", () => {
   document.getElementById("home").scrollIntoView();
 });
 
@@ -30,36 +30,19 @@ function getRandomNumber() {
   return Math.floor(Math.random(0, 3) * colors.length);
 }
 let random = getRandomNumber();
-
-document.querySelector(".name").style.color = colors[random];
-document.getElementById("home-button").addEventListener("mouseenter", () => {
-  document.getElementById("home-button").style.backgroundColor = colors[random];
-});
-document.getElementById("home-button").addEventListener("mouseleave", () => {
-  document.getElementById("home-button").style.backgroundColor = "#ebebeb";
-});
-document.querySelector(".bottom-border").style.backgroundColor = colors[random];
-
-const navLinks = document.querySelectorAll(".nav-link");
-for (let i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener("mouseenter", () => {
-    navLinks[i].style.color = colors[random];
-  });
-  navLinks[i].addEventListener("mouseleave", () => {
-    navLinks[i].style.color = "#000";
-  });
-}
+document.documentElement.style.setProperty("--theme-color", colors[random]);
 
 ///////////////////////////////////////////////
 
 // overlay navigation
 
 ///////////////////////////////////////////////
+
+//overlay navigation
 function openSideNav() {
   document.getElementById("navbar-section").classList.add("overlay-navbar");
   document.getElementById("navbar-section").style.width = "0vw";
   document.getElementById("overlay-div").style.display = "flex";
-
   document.getElementById("overlay-div").style.width = "100vw";
 
   const overlayButtons = document.querySelectorAll(".overlay-btn");
@@ -83,6 +66,7 @@ for (child of document.getElementById("overlay-div").children) {
   child.addEventListener("click", closeSideNav);
 }
 
+//hamburger button
 const menuButton = document.querySelector(".menu-button");
 
 menuButton.addEventListener("click", () => {
@@ -125,6 +109,12 @@ window.onscroll = function () {
   addSectionHighlighting();
 };
 
+window.onresize = function () {
+  addStickyHeader();
+  addScrollHomeButton();
+  addSectionHighlighting();
+};
+
 const navbar = document.getElementById("navbar-section");
 const navbarTop = navbar.offsetTop;
 
@@ -138,10 +128,11 @@ function addStickyHeader() {
 
 function addScrollHomeButton() {
   if (window.scrollY >= navbarTop) {
-    document.getElementById("scrollHomeBtn").style.display = "inline";
+    document.getElementById("scroll-home").style.display = "inline";
   } else {
-    document.getElementById("scrollHomeBtn").style.display = "none";
+    document.getElementById("scroll-home").style.display = "none";
   }
+
 }
 
 let projectsTop = document.getElementById("projects").offsetTop;
