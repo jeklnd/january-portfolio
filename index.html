@@ -25,6 +25,7 @@
   </head>
   <body>
     <main>
+      <!-- <canvas id="canvas"></canvas> -->
       <section id="home">
         <div class="container">
           <div class="home-container">
@@ -35,7 +36,7 @@
               I'm a front-end web developer.
             </h1>
             <button id="home-button" type="button" class="btn change-icon">
-              <p>View my work</p>
+              <p>Learn more</p>
               <i class="icon-sizing right fa-solid fa-arrow-right"></i>
               <!-- <i class="down fa-solid fa-arrow-down"></i> -->
             </button>
@@ -44,11 +45,11 @@
       </section>
       <nav id="navbar-section">
         <ul class="navbar">
-          <li><a class="btn nav-link" href="#home">Home</a></li>
-          <li><a class="btn nav-link" href="#about">About</a></li>
-          <li><a class="btn nav-link" href="#projects">Projects</a></li>
-          <li><a class="btn nav-link" href="#contact">Contact</a></li>
-          <li><a class="btn nav-link" href="#blog">Blog</a></li>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#blog">Blog</a></li>
 
           <button
             class="menu-button"
@@ -86,86 +87,27 @@
           <h2 class="section-heading">About</h2>
           <div class="about-content">
             <img id="headshot" src="./images/headshot.jpg" />
-            <p id="bio">
-              I'm a junior front-end developer looking for a new role in an
-              exciting company. I write maintainable, well-structured HTML,
-              modern, responsive CSS, and clean JavaScript code. When developing
-              the front-end, I tend to use vanilla HTML, CSS, and JavaScript,
-              but add other technologies when necessary. Most importantly, I can
-              adapt to whatever tools are required for the job and I constantly
-              learn new technologies. I'm based in Philadelphia, PA, but I'm
-              happy to work remotely and have experience in remote teams. When
-              I'm not coding, you can find me travelling, working out, and going
-              to new places. I'm looking for work and would love to connect.
-            </p>
-            <div id="skills">
-              <div class="skills-header"><h3>Skills</h3></div>
-              <div class="skills-cards">
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">HTML</p> -->
-                  <img class="skills-card-logo" src="./images/html.png" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">CSS</p> -->
-                  <img class="skills-card-logo" src="./images/css.png" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">JavaScript</p> -->
-                  <img class="skills-card-logo" src="./images/js.png" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">Sass</p> -->
-                  <img class="skills-card-logo" src="./images/sass.svg" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/jquery.svg" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/git.png" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/vscode.png" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/bootstrap.svg" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/firebase.png" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/contentful.svg" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/react.svg" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/nextjs.svg" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/redux.svg" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/mongodb.svg" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/mysql.svg" />
-                </div>
-                <div class="skills-card">
-                  <!-- <p class="skills-card-header">jQuery</p> -->
-                  <img class="skills-card-logo" src="./images/nodejs.svg" />
-                </div>
-              </div>
+            <div class="bio">
+              <!-- <h3 class="bio-header">Bio</h3> -->
+              <p id="bio">
+                I found myself appreciating beautiful websites and apps so much
+                that in 2022 I started building them.
+                <br /><br />Now an appreciation of the eye has grown into an
+                obsession of the fingers over writing well-structured, semantic
+                HTML, modern, terse CSS, and readable, modular JavaScript. I
+                learn new libraries and frameworks reguarly, and most
+                importantly, <span>I adapt</span> to whatever tools are required
+                for job. <br /><br />I'm based in Philadelphia, PA, but I'm
+                happy working remotely and have experience working in remote
+                teams.
+
+                <br /><br />When I'm not coding, you can find me travelling and
+                working out. I'm looking for work and would love to connect.
+                <br /><br />
+              </p>
+              <button type="button" class="btn">
+                <a href="#projects" class="nav-link">Projects</a>
+              </button>
             </div>
           </div>
         </div>
@@ -175,6 +117,75 @@
       <section id="projects">
         <div class="container">
           <h2 class="section-heading">Projects</h2>
+          <div id="skills" style="display: none;">
+            <!-- <div class="skills-header"><h3>Skills</h3></div> -->
+            <div class="skills-cards">
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">HTML</p> -->
+                <img class="skills-card-logo" src="./images/html.png" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">CSS</p> -->
+                <img class="skills-card-logo" src="./images/css.png" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">JavaScript</p> -->
+                <img class="skills-card-logo" src="./images/js.png" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">Sass</p> -->
+                <img class="skills-card-logo" src="./images/sass.svg" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/jquery.svg" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/git.png" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/vscode.png" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/bootstrap.svg" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/firebase.png" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/contentful.svg" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/react.svg" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/nextjs.svg" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/redux.svg" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/mongodb.svg" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/mysql.svg" />
+              </div>
+              <div class="skills-card">
+                <!-- <p class="skills-card-header">jQuery</p> -->
+                <img class="skills-card-logo" src="./images/nodejs.svg" />
+              </div>
+            </div>
+          </div>
           <div class="projects-container">
             <div class="project-card">
               <img
@@ -186,26 +197,25 @@
               <div class="project-content">
                 <h1 class="project-title">Connect Four</h1>
                 <p class="project-info">
-                  A fully-functional, responsive Connect Four game built from
-                  scratch using a professional hi-res mock-up delivered through
-                  Figma.
+                  A fully-functional, responsive Connect Four game built from a
+                  professional hi-res mock-up delivered through Figma.
                 </p>
                 <div class="project-logos">
                   <img src="./images/html.png" />
                   <img src="./images/sass.png" />
-                  <img src="./images/jquery.png" />
+                  <img src="./images/jquery.svg" />
                 </div>
                 <div class="project-btn-grp">
                   <a
                     href="https://github.com/jeklnd/connect-four"
-                    class="project-btn github"
+                    class="btn github"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Github Repo</a
                   >
                   <a
                     href="https://jeklnd.github.io/connect-four/"
-                    class="project-btn live-demo"
+                    class="btn live-demo"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Live Demo</a
@@ -223,7 +233,7 @@
               <div class="project-content">
                 <h1 class="project-title">jessekrensel.com</h1>
                 <p class="project-info">
-                  A responsive peronsal portfolio designed and developed from
+                  A responsive personal portfolio site designed and developed from
                   scratch using vanilla HTML, CSS, and JavaScript. No Bootstrap,
                   no jQuery, no React.
                 </p>
@@ -235,12 +245,12 @@
                 <div class="project-btn-grp">
                   <a
                     href="https://github.com/jeklnd/january-portfolio"
-                    class="project-btn github"
+                    class="btn github"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Github Repo</a
                   >
-                  <a href="#home" class="project-btn live-demo">Live Demo</a>
+                  <a href="#home" class="btn live-demo">Live Demo</a>
                 </div>
               </div>
             </div>
@@ -264,14 +274,14 @@
                 <div class="project-btn-grp">
                   <a
                     href="https://github.com/jeklnd/tindoge"
-                    class="project-btn github"
+                    class="btn github"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Github Repo</a
                   >
                   <a
                     href="https://jeklnd.github.io/tindoge/"
-                    class="project-btn live-demo"
+                    class="btn live-demo"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Live Demo</a
@@ -301,14 +311,14 @@
                 <div class="project-btn-grp">
                   <a
                     href="https://github.com/jeklnd/simon"
-                    class="project-btn github"
+                    class="btn github"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Github Repo</a
                   >
                   <a
                     href="https://jeklnd.github.io/simon/"
-                    class="project-btn live-demo"
+                    class="btn live-demo"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Live Demo</a
@@ -340,14 +350,14 @@
                 <div class="project-btn-grp">
                   <a
                     href="https://github.com/jeklnd/ejs-blog"
-                    class="project-btn github"
+                    class="btn github"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Github Repo</a
                   >
                   <a
                     href="https://safe-atoll-88975.herokuapp.com/"
-                    class="project-btn live-demo"
+                    class="btn live-demo"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Live Demo</a
@@ -363,23 +373,34 @@
       <section id="contact">
         <div class="container">
           <h2 class="section-heading">Contact</h2>
-          <div class="contact-subheading">Have a question?</div>
-          <form action="" method="post" class="form">
-            <input type="text" placeholder="Name" required="true" />
-            <input type="email" placeholder="Enter email" required="true" />
-            <textarea placeholder="Your message" required="true"></textarea>
-            <button type="submit">Submit</button>
+          <div class="contact-subheading">
+          </div>
+          <form action="" method="post" class="form" autocomplete="false">
+            <input type="text" placeholder="Name: *" name="name" required />
+            <input
+              type="email"
+              placeholder="Email Address: *"
+              name="email"
+              required
+            />
+            <textarea
+              placeholder="Your message: *"
+              type="text"
+              name="message"
+              required
+            ></textarea>
+            <button type="submit" class="btn">Submit</button>
           </form>
         </div>
       </section>
     </main>
 
     <!-- footer -->
-    <footer>
-      <button id="scrollHomeBtn" class="btn">
-        <p>↑</p>
+    <footer id="footer">
+      <button id="scroll-home">
+        <i id="arrow" class="icon-sizing up fa-solid fa-arrow-up"></i>
       </button>
-      <p>Copright © Jesse Krensel |</p>
+      <p>Copright © Jesse Krensel &nbsp; | &nbsp;</p>
       <p id="date">Date</p>
       <br />
       <!-- <p>I'm responsive and <a href="">change colors</a></p> -->
