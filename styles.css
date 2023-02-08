@@ -13,6 +13,7 @@ General Styles
   --light: #ebebeb;
   --font-one: "Montserrat", sans-serif;
   --font-two: "Esteban", sans-serif;
+  --theme-color: #4285f4;
 }
 
 *,
@@ -42,14 +43,13 @@ h2 {
   line-height: 1;
 }
 
-h3,
-h4,
-h5,
-h6 {
+h3 {
+  font-size: clamp(1.25rem, 0rem + 3.333vw, 3rem);
+  line-height: 1;
 }
 
 .section-heading {
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
   text-align: center;
 }
 
@@ -59,16 +59,23 @@ button {
   font-size: clamp(0.75rem, 0.536rem + 1.071vw, 1.5rem);
   margin: auto;
   display: inline-block;
+  text-decoration: none;
 }
 
-button,
-a {
+ol,
+li {
+  font-size: clamp(0.75rem, 0.536rem + 1.071vw, 1.5rem);
+}
+
+a,
+button {
   cursor: pointer;
+  color: #000;
 }
 
 section {
-  min-height: 100vh;
-  padding-top: 54px;
+  /* min-height: 100vh; */
+  padding: 125px 0;
   /* min-height: 100%; */
 }
 
@@ -84,7 +91,6 @@ section {
   border-color: black;
   border-width: 5px;
 }
-
 /********************************************************************
 
 Home Section
@@ -97,6 +103,7 @@ Home Section
   justify-content: center;
   align-items: center;
   /* color: #ebebeb; */
+  min-height: 100vh;
 }
 
 .home-container {
@@ -111,9 +118,8 @@ Home Section
 }
 
 .name {
-  /* on load, choose one of the colors */
   font-weight: 900;
-  color: var(--blue);
+  color: var(--theme-color);
 }
 
 .home-header {
@@ -127,26 +133,27 @@ Home Section
   font-family: var(--font-two);
   font-weight: 1;
   transition: 0.2s ease-in-out;
-}
-
-.btn #home {
-  border: 3px solid #000;
+  text-decoration: none;
+  border: 2px solid #000;
+  /* box-shadow: 0rem 0rem #000; */
   background-color: var(--light);
-}
-
-.btn:hover {
   color: #000;
-  border-color: black;
-  cursor: pointer;
-  /* border-radius: 10px; */
+  min-width: 11rem;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  transform: translate(-0.25rem, -0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--theme-color);
+}
+
+.change-icon > .right {
   transition: 0.2s ease-in-out;
 }
 
 .change-icon:hover > .right {
   transition: 0.2s ease-in-out;
-}
-
-.change-icon:hover > .right {
   transform: rotate(90deg);
 }
 
@@ -183,6 +190,7 @@ Navigation Bar
 
 .navbar a {
   padding: 0.5rem 2rem;
+  transition: 0.2s ease-in-out;
 }
 
 .active {
@@ -191,23 +199,13 @@ Navigation Bar
 }
 
 .navbar a:hover,
-.navbar a:focus,
 .navbar a:active {
-  color: #000;
-  transition: 0.2s;
+  color: var(--theme-color);
 }
 
 .bottom-border {
   padding-bottom: 2px;
-}
-
-@keyframes bottom-border-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
+  background-color: var(--theme-color);
 }
 
 @media (max-width: 730px) {
@@ -272,21 +270,6 @@ Navigation Bar
   }
 }
 
-#scrollHomeBtn {
-  display: none;
-  position: fixed;
-  bottom: 2%;
-  right: 1%;
-  opacity: 0.5;
-  padding: 0.25rem 1rem;
-  border-radius: 8px;
-  background-color: white;
-}
-
-#scrollHomeBtn:hover {
-  opacity: 1;
-}
-
 #overlay-div {
   transition: 1s;
 }
@@ -297,6 +280,7 @@ Navigation Bar
   left: 0;
   width: 0;
   min-height: 100vh;
+  /* min-width: 100vw; */
   background: #000;
   opacity: 0.94;
   display: flex;
@@ -334,33 +318,69 @@ About Section
 
 ********************************************************************/
 #about {
-  /* min-height: 100%; */
+  /* margin: auto; */
 }
+
 .about-content {
   max-width: 90%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(350px, auto));
-  gap: 10px 20px;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0px 2.5rem;
 }
 
 #headshot {
-  width: 300px;
+  max-width: 100%;
   height: auto;
-  border-radius: 180px;
+  border-radius: 6px;
   align-self: center;
   justify-self: center;
 }
 
+.bio {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem auto;
+  line-height: 1.25;
+  margin: 1rem auto;
+}
+
+#bio span {
+  font-weight: 600;
+  color: var(--theme-color);
+}
+
+.bio button {
+  margin: 1rem auto;
+}
+
+/********************************************************************
+
+Projects Section
+
+********************************************************************/
+/* SKILLS */
 #skills {
-  grid-column: span 2;
-  align-self: center;
+  /* margin: auto; */
+  padding: 2rem 0;
+}
+
+.skills-cards {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 85px);
+  /* grid-template-rows: repeat(2, 1fr); */
+  gap: 1.25rem;
+  /* width: 100%; */
+}
+
+.skills-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .skills-header {
@@ -378,28 +398,14 @@ About Section
   height: 4rem;
 }
 
-.skills-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
-  gap: 1.25rem;
-}
+/* PROJECTS */
 
-.skills-card {
+/* #projects .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-}
-
-/********************************************************************
-
-Projects Section
-
-********************************************************************/
-#projects {
-  padding-top: 70px;
-  height: 100%;
-}
+  align-items: center;
+  justify-content: center;
+} */
 
 .projects-container {
   display: grid;
@@ -407,16 +413,25 @@ Projects Section
   grid-gap: 1rem;
   overflow: hidden;
   /* margin: auto; */
-  padding: 0rem 5rem;
+  padding: 0rem 2rem;
 }
 
 .project-card {
   position: relative;
   border: none;
   background-color: #ebebeb;
-  border-radius: 50px;
-  border: 10px solid #000;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  /* border: 10px solid #000; */
+  /* box-shadow: 10px 10px 7px rgba(0, 0, 0, 1); */
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+  /* border: 1px solid var(--theme-color) */
+}
+
+.project-card:hover,
+.project-card:active {
+  transform: translate(-0.25rem, -0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--theme-color);
 }
 
 .project-img {
@@ -502,11 +517,6 @@ Projects Section
   transition: 0.4s;
 }
 
-.project-btn.github:hover {
-  background: var(--blue);
-  color: #000;
-}
-
 .project-btn.live-demo {
   background: white;
   border: 2px solid #000;
@@ -514,15 +524,9 @@ Projects Section
   transition: 0.4s;
 }
 
-.project-btn.live-demo:hover {
-  background: var(--blue);
-  border: 2px solid #000;
-  color: #fff;
-}
-
 .project-card:hover .project-img {
-  filter: blur(20px);
-  opacity: 0.4;
+  /* filter: blur(20px); */
+  opacity: 0;
 }
 
 .project-card:hover .project-content {
@@ -555,7 +559,7 @@ Contact Section
 
 .contact-subheading {
   text-align: center;
-  margin: 8% auto;
+  margin: 0;
 }
 
 .form input,
@@ -567,6 +571,7 @@ Contact Section
 
 .form button {
   position: relative;
+  margin: 2%;
 }
 
 /* footer */
@@ -576,4 +581,20 @@ footer {
   color: var(--light);
   padding: 3vh;
   line-height: 1rem;
+}
+
+#scroll-home {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+  /* opacity: 0.7; */
+  padding: 0.25rem 1rem;
+  border-radius: 8px;
+  background-color: transparent;
+  border: none;
+}
+
+#scroll-home i:hover {
+  color: var(--theme-color);
 }
