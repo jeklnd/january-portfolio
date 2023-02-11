@@ -1,0 +1,33 @@
+{
+  "name": "january-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeklnd/january-portfolio.git"
+  },
+  "author": "Jesse Krensel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeklnd/january-portfolio/issues"
+  },
+  "homepage": "https://github.com/jeklnd/january-portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.20"
+  }
+}
