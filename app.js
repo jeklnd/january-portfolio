@@ -6,6 +6,7 @@ const publicDirectory = path.join(__dirname, "public");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 const bodyParser = require("body-parser");
+const helmet = require("helment");
 
 app.use(express.static(publicDirectory));
 app.use(bodyParser.json());
@@ -14,6 +15,7 @@ app.use(
     extended: true,
   })
 );
+app.use(helmet());
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
