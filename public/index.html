@@ -8,7 +8,7 @@
       name="description"
       content="Discover the portfolio of Jesse Krensel, a talented and creative professional in web development. Explore my work, skills, and achievements and see how I can bring my unique talents to your next project. Get in touch today!"
     />
-    <link rel="manifest" href="manifest.json" />
+    <!-- <link rel="manifest" href="manifest.json" /> -->
 
     <!-- HOSTED STLYES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -432,7 +432,7 @@
       <button id="scroll-home">
         <i id="arrow" class="icon-sizing up fa-solid fa-arrow-up"></i>
       </button>
-      <p>Copright © Jesse Krensel &nbsp; | &nbsp;</p>
+      <p>Copyright © Jesse Krensel &nbsp; | &nbsp;</p>
       <p id="date">Date</p>
       <br />
       <!-- <p>I'm responsive and <a href="">change colors</a></p> -->
@@ -443,12 +443,17 @@
     <script src="index.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-      document.write(
-        '<script src="http://' +
-          (location.host || "localhost").split(":")[0] +
-          ':35729/livereload.js?snipver=1"></' +
-          "script>"
-      );
+      if (
+        location.hostname === "localhost" ||
+        location.hostname === "127.0.0.1"
+      ) {
+        document.write(
+          '<script src="http://' +
+            (location.host || "localhost").split(":")[0] +
+            ':35729/livereload.js?snipver=1"></' +
+            "script>"
+        );
+      }
     </script>
   </body>
 </html>
