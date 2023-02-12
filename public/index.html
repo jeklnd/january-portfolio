@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the portfolio of Jesse Krensel, a talented and creative professional in web development. Explore my work, skills, and achievements and see how I can bring my unique talents to your next project. Get in touch today!"
+    />
 
     <!-- HOSTED STLYES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,7 +34,11 @@
   <body>
     <main>
       <section id="home">
-        <img id="mouse-click" src="./images/mouse-click-icon.png" />
+        <img
+          id="mouse-click"
+          src="./images/mouse-click-icon.png"
+          alt="mouse-click-icon"
+        />
         <div class="container">
           <div class="home-container animate__animated animate__fadeInDown">
             <h1 class="home-header">
@@ -54,30 +62,30 @@
           <li><a class="nav-link" href="#projects">Projects</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
           <!-- <li><a class="nav-link" href="#blog">Blog</a></li> -->
-
-          <button
-            class="menu-button"
-            aria-controls="primary-navigation"
-            aria-expanded="false"
-          >
-            <svg
-              class="hamburger"
-              viewBox="0 -5 100 100"
-              width="30"
-              fill="none"
-              stroke="#000"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                class="line"
-                d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
-                stroke-width="7"
-              ></path>
-            </svg>
-          </button>
         </ul>
+        <button
+          class="menu-button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="menu-button"
+        >
+          <svg
+            class="hamburger"
+            viewBox="0 -5 100 100"
+            width="30"
+            fill="none"
+            stroke="#000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              class="line"
+              d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+              stroke-width="7"
+            ></path>
+          </svg>
+        </button>
         <div class="bottom-border"></div>
         <div id="overlay-div" class="overlay">
           <a class="overlay-btn" href="#home">Home</a>
@@ -90,7 +98,7 @@
         <div class="container">
           <h2 class="section-heading">About</h2>
           <div class="about-content">
-            <img id="headshot" src="./images/headshot.jpg" />
+            <img id="headshot" src="./images/headshot.jpg" alt="headshot" />
             <div class="bio">
               <!-- <h3 class="bio-header">Bio</h3> -->
               <p id="bio">
@@ -126,41 +134,77 @@
             <h3>Skills</h3>
             <div class="skills-cards">
               <div class="skills-card">
-                <img class="skills-card-logo" src="./images/html.png" />
+                <img
+                  class="skills-card-logo"
+                  src="./images/html.png"
+                  alt="html"
+                />
               </div>
               <div class="skills-card">
-                <img class="skills-card-logo" src="./images/css.png" />
+                <img
+                  class="skills-card-logo"
+                  src="./images/css.png"
+                  alt="css"
+                />
               </div>
               <div class="skills-card">
-                <img class="skills-card-logo" src="./images/js.png" />
+                <img
+                  class="skills-card-logo"
+                  src="./images/js.png"
+                  alt="javascript"
+                />
               </div>
               <div class="skills-card">
-                <img class="skills-card-logo" src="./images/sass.svg" />
+                <img
+                  class="skills-card-logo"
+                  src="./images/sass.svg"
+                  alt="sass"
+                />
               </div>
               <div class="skills-card">
-                <img class="skills-card-logo" src="./images/git.png" />
+                <img
+                  class="skills-card-logo"
+                  src="./images/git.png"
+                  alt="git"
+                />
               </div>
               <div class="skills-card">
-                <img class="skills-card-logo" src="./images/vscode.png" />
+                <img
+                  class="skills-card-logo"
+                  src="./images/vscode.png"
+                  alt="vscode"
+                />
               </div>
               <div class="skills-card">
-                <img class="skills-card-logo" src="./images/nextjs.svg" />
+                <img
+                  class="skills-card-logo"
+                  src="./images/nextjs.svg"
+                  alt="nextjs"
+                />
               </div>
               <div class="skills-card">
-                <img class="skills-card-logo" src="./images/mongodb.svg" />
+                <img
+                  class="skills-card-logo"
+                  src="./images/mongodb.svg"
+                  alt="mongodb"
+                />
               </div>
               <div class="skills-card">
-                <img class="skills-card-logo" src="./images/nodejs.svg" />
+                <img
+                  class="skills-card-logo"
+                  src="./images/nodejs.svg"
+                  alt="nodejs"
+                />
               </div>
             </div>
           </div>
           <div class="projects-container">
             <article class="project-card">
               <img
-                id="portfolio"
+                id="connect-four"
                 src="./images/connect-four.png"
                 class="project-img"
-                alt=""
+                alt="connect-four"
               />
               <div class="project-content">
                 <h3 class="project-title">Connect Four</h3>
@@ -169,9 +213,9 @@
                   professional hi-res mock-up delivered through Figma.
                 </p>
                 <div class="project-logos">
-                  <img src="./images/html.png" />
-                  <img src="./images/sass.png" />
-                  <img src="./images/jquery.svg" />
+                  <img src="./images/html.png" alt="htmk" />
+                  <img src="./images/sass.png" alt="sass" />
+                  <img src="./images/jquery.svg" alt="jquery" />
                 </div>
                 <div class="project-btn-grp">
                   <a
@@ -196,7 +240,7 @@
                 id="portfolio"
                 src="./images/portfolio.png"
                 class="project-img"
-                alt=""
+                alt="portfolio"
               />
               <div class="project-content">
                 <h3 class="project-title">jessekrensel.com</h3>
@@ -205,11 +249,11 @@
                   from scratch.
                 </p>
                 <div class="project-logos">
-                  <img src="./images/html.png" />
-                  <img src="./images/css.png" />
-                  <img src="./images/js.png" />
-                  <img src="./images/nodejs.svg" />
-                  <img src="./images/express.svg" />
+                  <img src="./images/html.png" alt="html" />
+                  <img src="./images/css.png" alt="css" />
+                  <img src="./images/js.png" alt="javascript" />
+                  <img src="./images/nodejs.svg" alt="nodejs" />
+                  <img src="./images/express.svg" alt="express" />
                 </div>
                 <div class="project-btn-grp">
                   <a
@@ -228,7 +272,7 @@
                 id="tindoge"
                 src="./images/tindoge.png"
                 class="project-img"
-                alt=""
+                alt="tindoge"
               />
               <div class="project-content">
                 <h3 class="project-title">Tindoge</h3>
@@ -237,8 +281,8 @@
                   during the London App Brewery online web development bootcamp.
                 </p>
                 <div class="project-logos">
-                  <img src="./images/html.png" />
-                  <img src="./images/css.png" />
+                  <img src="./images/html.png" alt="html" />
+                  <img src="./images/css.png" alt="css" />
                 </div>
                 <div class="project-btn-grp">
                   <a
@@ -263,7 +307,7 @@
                 id="Simon"
                 src="./images/simon.png"
                 class="project-img"
-                alt=""
+                alt="simon"
               />
               <div class="project-content">
                 <h3 class="project-title">Simon</h3>
@@ -272,10 +316,10 @@
                   Pages. Be careful: it's genuinely fun to play.
                 </p>
                 <div class="project-logos">
-                  <img src="./images/html.png" />
-                  <img src="./images/css.png" />
-                  <img src="./images/js.png" />
-                  <img src="./images/jquery.svg" />
+                  <img src="./images/html.png" alt="html" />
+                  <img src="./images/css.png" alt="css" />
+                  <img src="./images/js.png" alt="js" />
+                  <img src="./images/jquery.svg" alt="jquery" />
                 </div>
                 <div class="project-btn-grp">
                   <a
@@ -301,7 +345,7 @@
                 id="ejs-blog"
                 src="./images/ejs-blog.png"
                 class="project-img"
-                alt=""
+                alt="ejs-blog"
               />
               <div class="project-content">
                 <h3 class="project-title">EJS Blog</h3>
@@ -312,9 +356,9 @@
                   hosted in the cloud through Heroku.
                 </p>
                 <div class="project-logos">
-                  <img src="./images/nodejs.svg" />
-                  <img src="./images/mongodb.svg" />
-                  <img src="./images/heroku.svg" />
+                  <img src="./images/nodejs.svg" alt="nodejs" />
+                  <img src="./images/mongodb.svg" alt="mongodb" />
+                  <img src="./images/heroku.svg" alt="heroku" />
                 </div>
                 <div class="project-btn-grp">
                   <a
