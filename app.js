@@ -6,7 +6,7 @@ const publicDirectory = path.join(__dirname, "public");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 const bodyParser = require("body-parser");
-const helmet = require("helment");
+const helmet = require("helmet");
 
 app.use(express.static(publicDirectory));
 app.use(bodyParser.json());
