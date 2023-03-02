@@ -1,521 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Discover the portfolio of Jesse Krensel, a talented and creative professional in web development. Explore my work, skills, and achievements and see how I can bring my unique talents to your next project. Get in touch today!"
-    />
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <!-- HOSTED STLYES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- LOCAL STYLES -->
-    <link rel="stylesheet" href="./styles.css" />
-
-    <!-- HOSTED SCRIPTS -->
-    <script
-      src="https://kit.fontawesome.com/2a7a30fdca.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-    <title>Jesse Krensel</title>
-  </head>
-  <body>
-    <main>
-      <section id="home">
-        <img
-          id="mouse-click"
-          src="./images/mouse-click-icon.webp"
-          alt="mouse-click-icon"
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Discover the portfolio of Jesse Krensel, a talented and creative professional in web development. Explore my work, skills, and achievements and see how I can bring my unique talents to your next project. Get in touch today!"
         />
-        <div class="container">
-          <div class="home-container animate__animated animate__fadeInDown">
-            <h1 class="home-header">
-              Hello, I'm
-              <span class="name">Jesse Krensel</span>. <br />
-              <span class="role"></span>
-              I'm a front-end web developer.
-            </h1>
-            <button id="home-button" type="button" class="btn change-icon">
-              <p>Learn more</p>
-              <i class="icon-sizing right fa-solid fa-arrow-right"></i>
-              <!-- <i class="down fa-solid fa-arrow-down"></i> -->
-            </button>
-          </div>
-        </div>
-      </section>
-      <nav id="navbar-section">
-        <ul class="navbar">
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-          <!-- <li><a class="nav-link" href="#blog">Blog</a></li> -->
-        </ul>
-        <button
-          class="menu-button"
-          aria-controls="primary-navigation"
-          aria-expanded="false"
-          aria-label="menu-button"
-        >
-          <svg
-            class="hamburger"
-            viewBox="0 -5 100 100"
-            width="30"
-            fill="none"
-            stroke="#000"
-            stroke-width="1"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              class="line"
-              d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
-              stroke-width="7"
-            ></path>
-          </svg>
-        </button>
-        <div class="bottom-border"></div>
-        <div id="overlay-div" class="overlay">
-          <a class="overlay-btn" href="#home">Home</a>
-          <a class="overlay-btn" href="#about">About</a>
-          <a class="overlay-btn" href="#projects">Projects</a>
-          <a class="overlay-btn" href="#contact">Contact</a>
-        </div>
-      </nav>
-      <section id="about">
-        <div class="container">
-          <h2 class="section-heading">About</h2>
-          <div class="about-content">
-            <img
-              id="headshot"
-              src="./images/current-headshot.png"
-              alt="headshot"
-            />
-            <div class="bio">
-              <!-- <h3 class="bio-header">Bio</h3> -->
-              <p id="bio">
-                Motivated Junior Frontend Developer with a passion for creating
-                visually appealing and user-friendly websites using HTML, CSS,
-                JavaScript, and modern frontend frameworks such as React,
-                Angular and Vue.js. Strong attention to detail and understanding
-                of user experience, with a background in computer science and
-                experience in responsive design and cross-browser compatibility.
-                Enthusiastic problem-solver, dedicated to producing high-quality
-                work, and always eager to expand skills and knowledge.
-                <!-- As a highly motivated and creative Junior Frontend Developer, I have a passion for bringing ideas to life through the use of cutting-edge technology. With a strong background in HTML, CSS, and JavaScript, I have the skills necessary to create user-friendly and visually appealing websites.
+        <!-- <link rel="manifest" href="manifest.json" /> -->
+
+        <!-- HOSTED STLYES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- LOCAL STYLES -->
+        <link rel="stylesheet" href="./styles.css" />
+
+        <!-- HOSTED SCRIPTS -->
+        <script
+            src="https://kit.fontawesome.com/2a7a30fdca.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+        <title>Jesse Krensel</title>
+    </head>
+    <body>
+        <main>
+            <section id="home">
+                <img
+                    id="mouse-click"
+                    src="./images/mouse-click-icon.webp"
+                    alt="mouse-click-icon"
+                />
+                <div class="container">
+                    <div
+                        class="home-container animate__animated animate__fadeInDown"
+                    >
+                        <h1 class="home-header">
+                            Hello, I'm
+                            <span class="name">Jesse Krensel</span>. <br />
+                            <span class="role"></span>
+                            I'm a front-end web developer.
+                        </h1>
+                        <button
+                            id="home-button"
+                            type="button"
+                            class="btn change-icon"
+                        >
+                            <p>Learn more</p>
+                            <i
+                                class="icon-sizing right fa-solid fa-arrow-right"
+                            ></i>
+                            <!-- <i class="down fa-solid fa-arrow-down"></i> -->
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <nav id="navbar-section">
+                <ul class="navbar">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- <li><a class="nav-link" href="#blog">Blog</a></li> -->
+                </ul>
+                <button
+                    class="menu-button"
+                    aria-controls="primary-navigation"
+                    aria-expanded="false"
+                    aria-label="menu-button"
+                >
+                    <svg
+                        class="hamburger"
+                        viewBox="0 -5 100 100"
+                        width="30"
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path
+                            class="line"
+                            d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+                            stroke-width="7"
+                        ></path>
+                    </svg>
+                </button>
+                <div class="bottom-border"></div>
+                <div id="overlay-div" class="overlay">
+                    <a class="overlay-btn" href="#home">Home</a>
+                    <a class="overlay-btn" href="#about">About</a>
+                    <a class="overlay-btn" href="#projects">Projects</a>
+                    <a class="overlay-btn" href="#contact">Contact</a>
+                </div>
+            </nav>
+            <section id="about">
+                <div class="container">
+                    <h2 class="section-heading">About</h2>
+                    <div class="about-content">
+                        <img
+                            id="headshot"
+                            src="./images/current-headshot.png"
+                            alt="headshot"
+                        />
+                        <div class="bio">
+                            <!-- <h3 class="bio-header">Bio</h3> -->
+                            <p id="bio">
+                                Motivated Junior Frontend Developer with a
+                                passion for creating visually appealing and
+                                user-friendly websites using HTML, CSS,
+                                JavaScript, and modern frontend frameworks such
+                                as React, Angular and Vue.js. Strong attention
+                                to detail and understanding of user experience,
+                                with a background in computer science and
+                                experience in responsive design and
+                                cross-browser compatibility. Enthusiastic
+                                problem-solver, dedicated to producing
+                                high-quality work, and always eager to expand
+                                skills and knowledge.
+                                <!-- As a highly motivated and creative Junior Frontend Developer, I have a passion for bringing ideas to life through the use of cutting-edge technology. With a strong background in HTML, CSS, and JavaScript, I have the skills necessary to create user-friendly and visually appealing websites.
                   <br><br>
                   Throughout my studies in computer science and my various projects, I have developed a keen eye for detail and a deep understanding of user experience. I am experienced in working with modern frontend frameworks such as React, Angular and Vue.js, and have a solid understanding of responsive design and cross-browser compatibility issues.
                   <br><br>
                   I am an enthusiastic problem-solver, always looking for new challenges to tackle. I have a strong work ethic and am dedicated to producing high-quality work, no matter the task at hand. I am also a fast learner, always eager to pick up new technologies and expand my skill set.
                   <br><br>
                   I am excited to bring my passion, skills and experience to a dynamic and innovative company that values creativity and encourages growth. I am confident that I would be a valuable addition to any team, and I am eager to make a positive impact in the field of frontend development. -->
-              </p>
-              <button type="button" class="btn">
-                <a href="#projects" class="nav-link">Projects</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+                            </p>
+                            <button type="button" class="btn">
+                                <a href="#projects" class="nav-link"
+                                    >Projects</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- projects -->
-      <section id="projects">
-        <div class="container">
-          <h2 class="section-heading">Projects</h2>
-          <div id="skills">
-            <h3>Skills</h3>
-            <div class="skills-cards">
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/html.webp"
-                  alt="html"
-                />
-              </div>
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/css.webp"
-                  alt="css"
-                />
-              </div>
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/sass.svg"
-                  alt="sass"
-                />
-              </div>
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/js.webp"
-                  alt="javascript"
-                />
-              </div>
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/typescript.svg"
-                  alt="typescript logo"
-                />
-              </div>
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/react.svg"
-                  alt="react"
-                />
-              </div>
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/nextjs.svg"
-                  alt="nextjs"
-                />
-              </div>
+            <!-- projects -->
+            <section id="projects">
+                <div class="container">
+                    <h2 class="section-heading">Projects</h2>
+                    <div id="skills">
+                        <h3>Skills</h3>
+                        <div class="skills-cards">
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/html.webp"
+                                    alt="html"
+                                />
+                            </div>
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/css.webp"
+                                    alt="css"
+                                />
+                            </div>
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/sass.svg"
+                                    alt="sass"
+                                />
+                            </div>
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/js.webp"
+                                    alt="javascript"
+                                />
+                            </div>
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/typescript.svg"
+                                    alt="typescript logo"
+                                />
+                            </div>
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/react.svg"
+                                    alt="react"
+                                />
+                            </div>
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/nextjs.svg"
+                                    alt="nextjs"
+                                />
+                            </div>
 
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/git.webp"
-                  alt="git"
-                />
-              </div>
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/vscode.webp"
-                  alt="vscode"
-                />
-              </div>
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/git.webp"
+                                    alt="git"
+                                />
+                            </div>
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/vscode.webp"
+                                    alt="vscode"
+                                />
+                            </div>
 
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/mongodb.svg"
-                  alt="mongodb"
-                />
-              </div>
-              <div class="skills-card">
-                <img
-                  class="skills-card-logo"
-                  src="./images/nodejs.svg"
-                  alt="nodejs"
-                />
-              </div>
-              <!-- <div class="skills-card">
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/mongodb.svg"
+                                    alt="mongodb"
+                                />
+                            </div>
+                            <div class="skills-card">
+                                <img
+                                    class="skills-card-logo"
+                                    src="./images/nodejs.svg"
+                                    alt="nodejs"
+                                />
+                            </div>
+                            <!-- <div class="skills-card">
                 <img
                   class="skills-card-logo"
                   src="./images/tailwindcss.svg"
                   alt="tailwindcss"
                 />
               </div> -->
-            </div>
-          </div>
-          <div class="projects-container">
-            <article class="project-card">
-              <img
-                id="connect-four"
-                src="./images/space-tourism.png"
-                class="project-img"
-                alt="space tourism project image"
-              />
-              <div class="project-content">
-                <h3 class="project-title">Space Tourism</h3>
-                <p class="project-info">
-                  A static 4-page website for a fictitious space tourism company
-                  built with React and TypeScrthat uses react-router-dom for client-side
-                  rendering.
-                </p>
-                <div class="project-logos">
-                  <img src="./images/react.svg" alt="react logo" />
-                  <img
-                    src="./images/react-router-mark-color.svg"
-                    alt="react router logo"
-                  />
-                  <img src="./images/typescript.svg" alt="typescript logo" />
-                </div>
-                <div class="project-btn-grp">
-                  <a
-                    href="https://github.com/jeklnd/space-tourism"
-                    class="btn github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github Repo</a
-                  >
-                  <a
-                    href="https://space-tourism-jeklnd.netlify.app/"
-                    class="btn live-demo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </article>
-            <article class="project-card">
-              <img
-                id="connect-four"
-                src="./images/connect-four.webp"
-                class="project-img"
-                alt="connect-four"
-              />
-              <div class="project-content">
-                <h3 class="project-title">Connect Four</h3>
-                <p class="project-info">
-                  a responsive Connect Four web app built with vanilla HTML, CSS, and JavaScript plus some Sass and jQuery on the frontend and NodeJs and Express to handle routing on the backend                </p>
-                <div class="project-logos">
-                  <img src="./images/html.webp" alt="html" />
-                  <img src="./images/sass.webp" alt="sass" />
-                  <img src="./images/jquery.svg" alt="jquery" />
-                </div>
-                <div class="project-btn-grp">
-                  <a
-                    href="https://github.com/jeklnd/connect-four-game"
-                    class="btn github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github Repo</a
-                  >
-                  <a
-                    href="https://connect-four-game.herokuapp.com/"
-                    class="btn live-demo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </article>
-            <div class="project-card">
-              <img
-                id="portfolio"
-                src="./images/portfolio.webp"
-                class="project-img"
-                alt="portfolio"
-              />
-              <div class="project-content">
-                <h3 class="project-title">jessekrensel.com</h3>
-                <p class="project-info">
-                  A responsive full-stack portfolio site designed and developed
-                  from scratch.
-                </p>
-                <div class="project-logos">
-                  <img src="./images/html.webp" alt="html" />
-                  <img src="./images/css.webp" alt="css" />
-                  <img src="./images/js.webp" alt="javascript" />
-                  <img src="./images/nodejs.svg" alt="nodejs" />
-                  <img src="./images/express.svg" alt="express" />
-                </div>
-                <div class="project-btn-grp">
-                  <a
-                    href="https://github.com/jeklnd/january-portfolio"
-                    class="btn github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github Repo</a
-                  >
-                  <a href="#home" class="btn live-demo">Live Demo</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-card">
-              <img
-                id="tindoge"
-                src="./images/tindoge.webp"
-                class="project-img"
-                alt="tindoge"
-              />
-              <div class="project-content">
-                <h3 class="project-title">Tindoge</h3>
-                <p class="project-info">
-                  A front-end focused landing page project built in HTML and CSS
-                  during the London App Brewery online web development bootcamp.
-                </p>
-                <div class="project-logos">
-                  <img src="./images/html.webp" alt="html" />
-                  <img src="./images/css.webp" alt="css" />
-                </div>
-                <div class="project-btn-grp">
-                  <a
-                    href="https://github.com/jeklnd/tindoge"
-                    class="btn github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github Repo</a
-                  >
-                  <a
-                    href="https://jeklnd.github.io/tindoge/"
-                    class="btn live-demo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="project-card">
-              <img
-                id="Simon"
-                src="./images/simon.webp"
-                class="project-img"
-                alt="simon"
-              />
-              <div class="project-content">
-                <h3 class="project-title">Simon</h3>
-                <p class="project-info">
-                  A 1978 classic game built using jQuery and hosted on GitHub
-                  Pages. Be careful: it's genuinely fun to play.
-                </p>
-                <div class="project-logos">
-                  <img src="./images/html.webp" alt="html" />
-                  <img src="./images/css.webp" alt="css" />
-                  <img src="./images/js.webp" alt="js" />
-                  <img src="./images/jquery.svg" alt="jquery" />
-                </div>
-                <div class="project-btn-grp">
-                  <a
-                    href="https://github.com/jeklnd/simon"
-                    class="btn github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github Repo</a
-                  >
-                  <a
-                    href="https://jeklnd.github.io/simon/"
-                    class="btn live-demo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
+                        </div>
+                    </div>
+                    <div class="projects-container">
+                        <article class="project-card">
+                            <img
+                                id="space-tourism"
+                                src="./images/dictionary.png"
+                                class="project-img"
+                                alt="space tourism project image"
+                            />
+                            <div class="project-content">
+                                <h3 class="project-title">Dictionary</h3>
+                                <p class="project-info">
+                                    a dynamic web app implementing the Free
+                                    Dictionary API built using React, MUI, and
+                                    Axios
+                                </p>
+                                <div class="project-logos">
+                                    <img
+                                        src="./images/react.svg"
+                                        alt="react logo"
+                                    />
+                                    <img
+                                        src="./images/mui.svg"
+                                        alt="mui logo"
+                                    />
+                                </div>
+                                <div class="project-btn-grp">
+                                    <a
+                                        href="https://github.com/jeklnd/dictionary-app"
+                                        class="btn github"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Github Repo</a
+                                    >
+                                    <a
+                                        href="https://dictionary-jdk.netlify.app/"
+                                        class="btn live-demo"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <img
+                                id="space-tourism"
+                                src="./images/space-tourism.png"
+                                class="project-img"
+                                alt="space tourism project image"
+                            />
+                            <div class="project-content">
+                                <h3 class="project-title">Space Tourism</h3>
+                                <p class="project-info">
+                                    A static 4-page website for a fictitious
+                                    space tourism company built with React and
+                                    TypeScrthat uses react-router-dom for
+                                    client-side rendering.
+                                </p>
+                                <div class="project-logos">
+                                    <img
+                                        src="./images/react.svg"
+                                        alt="react logo"
+                                    />
+                                    <img
+                                        src="./images/react-router-mark-color.svg"
+                                        alt="react router logo"
+                                    />
+                                    <img
+                                        src="./images/typescript.svg"
+                                        alt="typescript logo"
+                                    />
+                                </div>
+                                <div class="project-btn-grp">
+                                    <a
+                                        href="https://github.com/jeklnd/space-tourism"
+                                        class="btn github"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Github Repo</a
+                                    >
+                                    <a
+                                        href="https://space-tourism-jeklnd.netlify.app/"
+                                        class="btn live-demo"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <img
+                                id="connect-four"
+                                src="./images/connect-four.webp"
+                                class="project-img"
+                                alt="connect-four"
+                            />
+                            <div class="project-content">
+                                <h3 class="project-title">Connect Four</h3>
+                                <p class="project-info">
+                                    a responsive Connect Four web app built with
+                                    vanilla HTML, CSS, and JavaScript plus some
+                                    Sass and jQuery on the frontend and NodeJs
+                                    and Express to handle routing on the backend
+                                </p>
+                                <div class="project-logos">
+                                    <img src="./images/html.webp" alt="html" />
+                                    <img src="./images/sass.webp" alt="sass" />
+                                    <img
+                                        src="./images/jquery.svg"
+                                        alt="jquery"
+                                    />
+                                </div>
+                                <div class="project-btn-grp">
+                                    <a
+                                        href="https://github.com/jeklnd/connect-four-game"
+                                        class="btn github"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Github Repo</a
+                                    >
+                                    <a
+                                        href="https://connect-four-game.herokuapp.com/"
+                                        class="btn live-demo"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </article>
+                        <div class="project-card">
+                            <img
+                                id="portfolio"
+                                src="./images/portfolio.webp"
+                                class="project-img"
+                                alt="portfolio"
+                            />
+                            <div class="project-content">
+                                <h3 class="project-title">jessekrensel.com</h3>
+                                <p class="project-info">
+                                    A responsive full-stack portfolio site
+                                    designed and developed from scratch.
+                                </p>
+                                <div class="project-logos">
+                                    <img src="./images/html.webp" alt="html" />
+                                    <img src="./images/css.webp" alt="css" />
+                                    <img
+                                        src="./images/js.webp"
+                                        alt="javascript"
+                                    />
+                                    <img
+                                        src="./images/nodejs.svg"
+                                        alt="nodejs"
+                                    />
+                                    <img
+                                        src="./images/express.svg"
+                                        alt="express"
+                                    />
+                                </div>
+                                <div class="project-btn-grp">
+                                    <a
+                                        href="https://github.com/jeklnd/january-portfolio"
+                                        class="btn github"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Github Repo</a
+                                    >
+                                    <a href="#home" class="btn live-demo"
+                                        >Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img
+                                id="tindoge"
+                                src="./images/tindoge.webp"
+                                class="project-img"
+                                alt="tindoge"
+                            />
+                            <div class="project-content">
+                                <h3 class="project-title">Tindoge</h3>
+                                <p class="project-info">
+                                    A front-end focused landing page project
+                                    built in HTML and CSS during the London App
+                                    Brewery online web development bootcamp.
+                                </p>
+                                <div class="project-logos">
+                                    <img src="./images/html.webp" alt="html" />
+                                    <img src="./images/css.webp" alt="css" />
+                                </div>
+                                <div class="project-btn-grp">
+                                    <a
+                                        href="https://github.com/jeklnd/tindoge"
+                                        class="btn github"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Github Repo</a
+                                    >
+                                    <a
+                                        href="https://jeklnd.github.io/tindoge/"
+                                        class="btn live-demo"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img
+                                id="Simon"
+                                src="./images/simon.webp"
+                                class="project-img"
+                                alt="simon"
+                            />
+                            <div class="project-content">
+                                <h3 class="project-title">Simon</h3>
+                                <p class="project-info">
+                                    A 1978 classic game built using jQuery and
+                                    hosted on GitHub Pages. Be careful: it's
+                                    genuinely fun to play.
+                                </p>
+                                <div class="project-logos">
+                                    <img src="./images/html.webp" alt="html" />
+                                    <img src="./images/css.webp" alt="css" />
+                                    <img src="./images/js.webp" alt="js" />
+                                    <img
+                                        src="./images/jquery.svg"
+                                        alt="jquery"
+                                    />
+                                </div>
+                                <div class="project-btn-grp">
+                                    <a
+                                        href="https://github.com/jeklnd/simon"
+                                        class="btn github"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Github Repo</a
+                                    >
+                                    <a
+                                        href="https://jeklnd.github.io/simon/"
+                                        class="btn live-demo"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="project-card">
-              <img
-                id="ejs-blog"
-                src="./images/ejs-blog.webp"
-                class="project-img"
-                alt="ejs-blog"
-              />
-              <div class="project-content">
-                <h3 class="project-title">EJS Blog</h3>
-                <p class="project-info">
-                  Simple blog built using Node/Express and EJS. his simple
-                  blog-style project involved defining custom routes, working
-                  with middlewares, templating, and managing a MongoDB database
-                  hosted in the cloud through Heroku.
-                </p>
-                <div class="project-logos">
-                  <img src="./images/nodejs.svg" alt="nodejs" />
-                  <img src="./images/mongodb.svg" alt="mongodb" />
-                  <img src="./images/heroku.svg" alt="heroku" />
+                        <div class="project-card">
+                            <img
+                                id="ejs-blog"
+                                src="./images/ejs-blog.webp"
+                                class="project-img"
+                                alt="ejs-blog"
+                            />
+                            <div class="project-content">
+                                <h3 class="project-title">EJS Blog</h3>
+                                <p class="project-info">
+                                    Simple blog built using Node/Express and
+                                    EJS. his simple blog-style project involved
+                                    defining custom routes, working with
+                                    middlewares, templating, and managing a
+                                    MongoDB database hosted in the cloud through
+                                    Heroku.
+                                </p>
+                                <div class="project-logos">
+                                    <img
+                                        src="./images/nodejs.svg"
+                                        alt="nodejs"
+                                    />
+                                    <img
+                                        src="./images/mongodb.svg"
+                                        alt="mongodb"
+                                    />
+                                    <img
+                                        src="./images/heroku.svg"
+                                        alt="heroku"
+                                    />
+                                </div>
+                                <div class="project-btn-grp">
+                                    <a
+                                        href="https://github.com/jeklnd/ejs-blog"
+                                        class="btn github"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Github Repo</a
+                                    >
+                                    <a
+                                        href="https://safe-atoll-88975.herokuapp.com/"
+                                        class="btn live-demo"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-btn-grp">
-                  <a
-                    href="https://github.com/jeklnd/ejs-blog"
-                    class="btn github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github Repo</a
-                  >
-                  <a
-                    href="https://safe-atoll-88975.herokuapp.com/"
-                    class="btn live-demo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
 
-      <!-- contact -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <div id="contact-card" class="container">
-          <h3 class="section-heading">Send me an email</h3>
-          <div class="contact-subheading"></div>
-          <form
-            id="form"
-            action="/"
-            method="POST"
-            class="form"
-            autocomplete="off"
-          >
-            <input
-              id="name"
-              type="text"
-              placeholder="First Last"
-              name="name"
-              required
-            />
-            <input
-              id="email"
-              type="email"
-              placeholder="you@domain.com"
-              name="email"
-              required
-            />
-            <textarea
-              id="message"
-              placeholder="Your message:"
-              type="text"
-              name="message"
-              rows="4"
-              required
-            ></textarea>
-            <button id="contact-button" class="btn" type="submit" class="btn">
-              Send Email
+            <!-- contact -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <div id="contact-card" class="container">
+                    <h3 class="section-heading">Send me an email</h3>
+                    <div class="contact-subheading"></div>
+                    <form
+                        id="form"
+                        action="/"
+                        method="POST"
+                        class="form"
+                        autocomplete="off"
+                    >
+                        <input
+                            id="name"
+                            type="text"
+                            placeholder="First Last"
+                            name="name"
+                            required
+                        />
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="you@domain.com"
+                            name="email"
+                            required
+                        />
+                        <textarea
+                            id="message"
+                            placeholder="Your message:"
+                            type="text"
+                            name="message"
+                            rows="4"
+                            required
+                        ></textarea>
+                        <button
+                            id="contact-button"
+                            class="btn"
+                            type="submit"
+                            class="btn"
+                        >
+                            Send Email
+                        </button>
+                        <p id="success">Success. Your email has been sent.</p>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <button id="scroll-home">
+                <i id="arrow" class="icon-sizing up fa-solid fa-arrow-up"></i>
             </button>
-            <p id="success">Success. Your email has been sent.</p>
-          </form>
-        </div>
-      </section>
-    </main>
+            <p>Copyright © Jesse Krensel &nbsp; | &nbsp;</p>
+            <p id="date">Date</p>
+            <br />
+            <!-- <p>I'm responsive and <a href="">change colors</a></p> -->
+        </footer>
 
-    <!-- footer -->
-    <footer id="footer">
-      <button id="scroll-home">
-        <i id="arrow" class="icon-sizing up fa-solid fa-arrow-up"></i>
-      </button>
-      <p>Copyright © Jesse Krensel &nbsp; | &nbsp;</p>
-      <p id="date">Date</p>
-      <br />
-      <!-- <p>I'm responsive and <a href="">change colors</a></p> -->
-    </footer>
+        <!-- scripts -->
 
-    <!-- scripts -->
-
-    <script src="index.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      if (process.env.NODE_ENV !== "production") {
-        document.write(
-          '<script src="http://' +
-            (location.host || "localhost").split(":")[0] +
-            ':35729/livereload.js?snipver=1"></' +
-            "script>"
-        );
-      }
-    </script>
-  </body>
+        <script src="index.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            if (process.env.NODE_ENV !== "production") {
+                document.write(
+                    '<script src="http://' +
+                        (location.host || "localhost").split(":")[0] +
+                        ':35729/livereload.js?snipver=1"></' +
+                        "script>"
+                );
+            }
+        </script>
+    </body>
 </html>
